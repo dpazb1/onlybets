@@ -1,0 +1,404 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(0, 0, 0);
+    background-color: white;
+}
+
+.headerimg {
+    width: 512px;
+    height: 128px;
+}
+
+:root{
+    /* color type A */
+    --line_color : #555555 ;
+    --back_color : rgb(231, 192, 18, 0)  ;
+}
+
+.button{
+    position : relative ;
+    z-index : 0 ;
+    width : 240px ;
+    height : 56px ;
+    text-decoration : none ;
+    font-size : 14px ; 
+    font-weight : bold ;
+    color : var(--line_color) ;
+    letter-spacing : 2px ;
+    transition : all .3s ease ;
+}
+
+.button__text{
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    width : 100% ;
+    height : 100% ;
+}
+
+.button::before,
+.button::after,
+.button__text::before,
+.button__text::after{
+    content : '' ;
+    position : absolute ;
+    height : 3px ;
+    border-radius : 2px ;
+    background : var(--line_color) ;
+    transition : all .5s ease ;
+}
+.button::before{
+    top : 0 ;
+    left : 54px ;
+    width : calc( 100% - 56px * 2 - 16px ) ;
+}
+.button::after{
+    top : 0 ;
+    right : 54px ;
+    width : 8px ;
+}
+.button__text::before{
+    bottom : 0 ;
+    right : 54px ;
+    width : calc( 100% - 56px * 2 - 16px ) ;
+}
+.button__text::after{
+    bottom : 0 ;
+    left : 54px ;
+    width : 8px ;
+}
+.button__line{
+    position : absolute ;
+    top : 0 ;
+    width : 56px ;
+    height : 100% ;
+    overflow : hidden ;
+}
+.button__line::before{
+    content : '' ;
+    position : absolute ;
+    top : 0 ;
+    width : 150% ;
+    height : 100% ;
+    box-sizing : border-box ;
+    border-radius : 300px ;
+    border : solid 3px var(--line_color) ;
+}
+.button__line:nth-child(1),
+.button__line:nth-child(1)::before{
+    left : 0 ;
+}
+.button__line:nth-child(2),
+.button__line:nth-child(2)::before{
+    right : 0 ;
+}
+
+.button:hover{
+    letter-spacing : 3px ;
+}
+.button:hover::before,
+.button:hover .button__text::before{
+    width : 8px ;
+}
+.button:hover::after,
+.button:hover .button__text::after{
+    width : calc( 100% - 56px * 2 - 16px ) ;
+}
+.button__drow1,
+.button__drow2{
+    position : absolute ;
+    z-index : -1 ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+}
+.button__drow1{
+    top : -16px ;
+    left : 40px ;
+    width : 32px ;
+    height : 0;
+    transform : rotate( 30deg ) ;
+}
+.button__drow2{
+    top : 44px ;
+    left : 77px ;
+    width : 32px ;
+    height : 0 ;
+    transform : rotate(-127deg ) ;
+}
+.button__drow1::before,
+.button__drow1::after,
+.button__drow2::before,
+.button__drow2::after{
+    content : '' ;
+    position : absolute ;
+}
+.button__drow1::before{
+    bottom : 0 ;
+    left : 0 ;
+    width : 0 ;
+    height : 32px ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+    transform : rotate( -60deg ) ;
+}
+.button__drow1::after{
+    top : -10px ;
+    left : 45px ;
+    width : 0 ;
+    height : 32px ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+    transform : rotate( 69deg ) ;
+}
+.button__drow2::before{
+    bottom : 0 ;
+    left : 0 ;
+    width : 0 ;
+    height : 32px ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+    transform : rotate( -146deg ) ;
+}
+.button__drow2::after{
+    bottom : 26px ;
+    left : -40px ;
+    width : 0 ;
+    height : 32px ;
+    border-radius : 16px ;
+    transform-origin : 16px 16px ;
+    transform : rotate( -262deg ) ;
+}
+.button__drow1,
+.button__drow1::before,
+.button__drow1::after,
+.button__drow2,
+.button__drow2::before,
+.button__drow2::after{
+    background : var( --back_color ) ;
+}
+.button:hover .button__drow1{
+    animation : drow1 ease-in .06s ;
+    animation-fill-mode : forwards ;
+}
+.button:hover .button__drow1::before{
+    animation : drow2 linear .08s .06s ;
+    animation-fill-mode : forwards ;
+}
+.button:hover .button__drow1::after{
+    animation : drow3 linear .03s .14s ;
+    animation-fill-mode : forwards ;
+}
+.button:hover .button__drow2{
+    animation : drow4 linear .06s .2s ;
+    animation-fill-mode : forwards ;
+}
+.button:hover .button__drow2::before{
+    animation : drow3 linear .03s .26s ;
+    animation-fill-mode : forwards ;
+}
+.button:hover .button__drow2::after{
+    animation : drow5 linear .06s .32s ;
+    animation-fill-mode : forwards ;
+}
+
+@keyframes drow1{
+    0%   { height : 0 ; }
+    100% { height : 100px ; }
+}
+@keyframes drow2{
+    0%   { width : 0 ; opacity : 0 ;}
+    10%  { opacity : 0 ;}
+    11%  { opacity : 1 ;}
+    100% { width : 120px ; }
+}
+@keyframes drow3{
+    0%   { width : 0 ; }
+    100% { width : 80px ; }
+}
+@keyframes drow4{
+    0%   { height : 0 ; }
+    100% { height : 120px ; }
+}
+@keyframes drow5{
+    0%   { width : 0 ; }
+    100% { width : 124px ; }
+}
+
+.container{
+    width : 100% ;
+    height : 100px ;
+    display : flex ;
+    flex-direction : column ;
+    justify-content : center ;
+    align-items : center ;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+header {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.bold {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    font-weight: 1000;
+    font-size: 40px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.dct {
+    font-size: 15px;
+    color: hsla(0, 100%, 50%, 0.8);
+    margin-top: 4px;
+}
+
+.price {
+    margin-bottom: 0;
+}
+
+.box {
+    margin-top: 25px;
+    padding-bottom: 50px;
+    width: 1130px;
+    height: fit-content;
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    border-radius: 10px;
+}
+
+.service_wrap {
+    margin: 20px 40px 0px 40px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: 1fr;
+}
+
+.service {
+    text-align: center;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px #888888;
+    transition-duration: 300ms
+}
+
+.ar {
+    margin-bottom: 38px;
+}
+
+.service_logo {
+    position:relative;
+    right:75px;
+    padding-top: 10px;
+    width: 120px;
+    height: 30px;
+}
+
+.tl {
+    text-transform: uppercase;
+    font-weight: 1000;
+    margin-bottom: 4px;
+}
+
+.bt {
+    grid-column: span 1.5;
+    grid-row: 1/3;
+}
+
+.tiempo {
+    margin-top: 4px;
+}
+
+.buy {
+    width: 30px;
+    height: 20px;
+    background-color: black;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.btn_text {
+    color: white;
+}
+
+.days {
+    height: 75px;
+    width: 75px;
+    position: relative;
+    right:60px;
+    top: 12px;
+}
+
+.top_img {
+    display: flex;
+    justify-content: center;
+}
+
+.lilt1 {
+    font-size: 12px;
+    color:green;
+    margin: 0;
+    position: relative;
+    bottom: 65px;
+    left: 107px;
+}
+
+.lilt2 {
+    font-size: 12px;
+    color:red;
+    margin: 0;
+    position: relative;
+    bottom: 65px;
+    left: 107px;
+}
+
+@media only screen and (max-width: 420px) {
+    .service_logo {
+        position:relative;
+        right:55px;
+    }
+    .lilt1 {
+        position: relative;
+        left: 97px;
+    }
+    .lilt2 {
+        position: relative;
+        left: 97px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .headerimg {
+        width: 440px;
+        height: 110px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .headerimg {
+        width: 300px;
+        height: 75px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    .box {
+        width: 380px;
+    }
+}
