@@ -4,6 +4,7 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     color:rgb(0, 0, 0);
     background-color: white;
+    overflow-x: hidden;
 }
 
 .headerimg {
@@ -364,22 +365,7 @@ header {
     left: 107px;
 }
 
-@media only screen and (max-width: 420px) {
-    .service_logo {
-        position:relative;
-        right:55px;
-    }
-    .lilt1 {
-        position: relative;
-        left: 97px;
-    }
-    .lilt2 {
-        position: relative;
-        left: 97px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 613px) {
     .headerimg {
         width: 440px;
         height: 110px;
@@ -400,9 +386,77 @@ header {
   
 }
 
+@media only screen and (max-width: 1091px) {
+    .service_logo {
+        position:relative;
+        right:40px;
+    }
+    .lilt1 {
+        position: relative;
+        left: 70px;
+    }
+    .lilt2 {
+        position: relative;
+        left: 70px;
+    }
+}
+
+@media only screen and (max-width: 613px) {
+    .lilt1 {
+        position: relative;
+        left: 120px;
+    }
+    .lilt2 {
+        position: relative;
+        left: 120px;
+    }
+}
+
 @media only screen and (min-width:421px) {
+    .box {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .service_logo {
+        position:relative;
+        right:55px;
+    }
+    .lilt1 {
+        position: relative;
+        left: 90px;
+    }
+    .lilt2 {
+        position: relative;
+        left: 90px;
+    }
+}
+
+@media only screen and (max-width: 315px) {
+    .service_logo {
+        position:relative;
+        right:40px;
+    }
+    .lilt1 {
+        position: relative;
+        left: 75px;
+    }
+    .lilt2 {
+        position: relative;
+        left: 75px;
+    }
+    h1 {
+        font-size: 13px;
+    }
+    .headerimg {
+        width: 260px;
+        height: 65px;
+    }
+    .bold {
+        font-size: 30px;
+    }
 }
