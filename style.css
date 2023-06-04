@@ -365,6 +365,10 @@ header {
     left: 107px;
 }
 
+.button:hover {
+    cursor:pointer;
+}
+
 @media only screen and (max-width: 613px) {
     .headerimg {
         width: 440px;
