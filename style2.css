@@ -404,9 +404,6 @@ header {
         width: 300px;
         height: 75px;
     }
-    h1 {
-        font-size: 23px;
-    }
     .box {
         width: 380px;
     }
@@ -491,14 +488,20 @@ header {
         position: relative;
         left: 75px;
     }
-    h1 {
-        font-size: 18px;
-    }
     .headerimg {
         width: 260px;
         height: 65px;
     }
     .bold {
         font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 364px) {
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 20px;
     }
 }
