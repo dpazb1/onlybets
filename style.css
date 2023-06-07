@@ -7,6 +7,10 @@ html, body {
     overflow-x: hidden;
 }
 
+html {
+    box-sizing: border-box;
+}
+
 .headerimg {
     width: 512px;
     height: 128px;
@@ -241,6 +245,8 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 200;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 header {
@@ -376,6 +382,15 @@ header {
     }
 }
 
+@media only screen and (min-width:1175px) {
+    .box {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    }
+}
+
 @media only screen and (max-width: 420px) {
     .headerimg {
         width: 300px;
@@ -405,7 +420,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 613px) {
+@media only screen and (max-width: 599px) {
     .lilt1 {
         position: relative;
         left: 120px;
@@ -414,14 +429,29 @@ header {
         position: relative;
         left: 120px;
     }
+    .service_logo {
+        position:relative;
+        right: 85px;
+    }
 }
 
-@media only screen and (min-width:430px) {
+@media only screen and (min-width:1175px) {
     .box {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .headerimg {
+        width: 340px;
+        height: 85px;
+    }
+
+    .bold {
+        font-size: 35px;
     }
 }
 
@@ -439,13 +469,8 @@ header {
         left: 90px;
     }
 }
-@media only screen and (max-width: 420px) {
-    .service_logo {
-        position:relative;
-        right:45px;
-    }
-}
-@media only screen and (max-width: 315px) {
+
+@media only screen and (max-width: 364px) {
     .service_logo {
         position:relative;
         right:40px;
@@ -459,7 +484,7 @@ header {
         left: 75px;
     }
     h1 {
-        font-size: 13px;
+        font-size: 18px;
     }
     .headerimg {
         width: 260px;
