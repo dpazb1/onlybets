@@ -439,7 +439,12 @@ header {
         left: 90px;
     }
 }
-
+@media only screen and (max-width: 420px) {
+    .service_logo {
+        position:relative;
+        right:45px;
+    }
+}
 @media only screen and (max-width: 315px) {
     .service_logo {
         position:relative;
