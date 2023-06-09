@@ -388,8 +388,8 @@ header {
     height: 36px;
     width: 36px;
     opacity: 0.6;
-    padding-bottom: 30px;
-    padding-left: 15px;
+    margin-bottom: 30px;
+    margin-left: 15px;
 }
 
 .ig:hover {
@@ -401,6 +401,10 @@ header {
     display: flex;
 }
 
+.igbox {
+    height: 36px;
+    width: 36px;
+}
 
 @media only screen and (max-width: 613px) {
     .headerimg {
@@ -417,7 +421,7 @@ header {
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     }
     .ig {
-        padding-top: 15px;
+        margin-top: 15px;
     }
 }
 
@@ -486,7 +490,7 @@ header {
     }
 
     .ig {
-        padding-top: 15px;
+        margin-top: 15px;
     }
 }
 
