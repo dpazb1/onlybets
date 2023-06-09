@@ -384,6 +384,23 @@ header {
     cursor:pointer;
 }
 
+.ig {
+    height: 36px;
+    width: 36px;
+    opacity: 0.6;
+    padding-bottom: 30px;
+    padding-left: 15px;
+}
+
+.ig:hover {
+    opacity: 0.8;
+    cursor:pointer;
+}
+
+.ig_center {
+    display: flex;
+}
+
 @media only screen and (max-width: 613px) {
     .headerimg {
         width: 440px;
@@ -398,6 +415,10 @@ header {
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     }
+    
+    .ig {
+        padding-top: 15px;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -409,6 +430,18 @@ header {
         width: 380px;
     }
   
+}
+
+@media only screen and (max-width: 869px) {
+    .ig_center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ig {
+        position:relative;
+        top:20px;
+    }
 }
 
 @media only screen and (max-width: 1091px) {
