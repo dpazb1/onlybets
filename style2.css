@@ -446,6 +446,7 @@ header {
     .ig {
         position:relative;
         top:20px;
+        margin-left: 0px;
     }
 }
 
