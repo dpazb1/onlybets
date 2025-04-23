@@ -288,10 +288,11 @@ header {
 
 .box {
     margin-top: 25px;
+    margin-bottom: 25px;
     padding-bottom: 50px;
     width: 1130px;
     height: fit-content;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 .service_wrap {
@@ -387,18 +388,18 @@ header {
 .ig {
     height: 36px;
     width: 36px;
-    opacity: 0.6;
-    margin-bottom: 30px;
-    margin-left: 15px;
+    opacity: 0.8;
 }
 
 .ig:hover {
-    opacity: 0.8;
+    opacity: 1;
     cursor:pointer;
 }
 
 .ig_center {
+    margin-top: 20px;
     display: flex;
+    justify-content: center;
 }
 
 .igbox {
