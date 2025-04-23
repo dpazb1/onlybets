@@ -306,7 +306,7 @@ header {
 .service {
     text-align: center;
     border: 1px rgba(0, 0, 0, 0.1) solid;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: 1px 1px 2px #888888;
     transition-duration: 300ms
 }
@@ -386,8 +386,8 @@ header {
 }
 
 .ig {
-    height: 36px;
-    width: 36px;
+    height: 82%;
+    width: 82%;
     opacity: 0.8;
 }
 
@@ -397,14 +397,25 @@ header {
 }
 
 .ig_center {
-    margin-top: 20px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
 }
 
 .igbox {
-    height: 36px;
-    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+}
+
+.spacer {
+    width: 20px;
+}
+.barca {
+    height: 100%;
+    width: 100%;
 }
 
 @media only screen and (max-width: 613px) {
@@ -414,17 +425,14 @@ header {
     }
 }
 
-@media only screen and (min-width:1175px) {
+/* @media only screen and (min-width:1175px) {
     .box {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     }
-    .ig {
-        margin-top: 15px;
-    }
-}
+} */
 
 @media only screen and (max-width: 420px) {
     .headerimg {
@@ -483,18 +491,14 @@ header {
     }
 }
 
-@media only screen and (min-width:1175px) {
+/* @media only screen and (min-width:1175px) {
     .box {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     }
-
-    .ig {
-        margin-top: 15px;
-    }
-}
+} */
 
 @media only screen and (max-width: 470px) {
     .headerimg {
