@@ -385,25 +385,28 @@ header {
 }
 
 .ig {
-    height: 36px;
-    width: 36px;
-    opacity: 0.6;
-    margin-bottom: 30px;
-    margin-left: 15px;
+    height: 82%;
+    width: 82%;
+    opacity: 0.8;
 }
 
 .ig:hover {
-    opacity: 0.8;
+    opacity: 1;
     cursor:pointer;
 }
 
 .ig_center {
+    margin-top: 60px;
     display: flex;
+    justify-content: center;
 }
 
 .igbox {
-    height: 36px;
-    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
 }
 
 @media only screen and (max-width: 613px) {
